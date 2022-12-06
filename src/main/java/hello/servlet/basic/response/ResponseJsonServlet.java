@@ -15,7 +15,7 @@ import java.io.IOException;
 // 2. @WebServlet 어노테이션으로 urlPatterns 지정.
 // => @WebServlet 어노테이션이 등장하기 이전에는 web.xml 파일에서 일일이 컨트롤러 파일과 url 을 연결시켜 주어야 했다.
 // https://gugbab2.tistory.com/21 참조
-@WebServlet(name = "responseJsonServlet", urlPatterns = "response-json")
+@WebServlet(name = "responseJsonServlet", urlPatterns = "/response-json")
 public class ResponseJsonServlet extends HttpServlet { // 1. servlet의 기능을 이용하기 위해 상속
     // http 요청이 호출되면 protected 접근제한자를 쓰는 service 메서드를 호출하기 때문에
 
